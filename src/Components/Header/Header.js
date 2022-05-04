@@ -4,9 +4,8 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div >
-            {/* <h2>Zayn & Myza</h2> */}
-            <div className='navbar'>  
+            <div className='navbar'>
+                <h2>Zayn & Myza</h2>
                 <nav>
                     <Link to='/'>Home</Link>
                     <Link to='/blogs'>Blogs</Link>
@@ -17,7 +16,6 @@ const Header = () => {
                     <Link to='/signup'>Sign Up</Link>
                 </nav>
             </div>
-        </div>
     );
 };
 

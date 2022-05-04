@@ -3,7 +3,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
+    align-items: center;
 }
 .navbar a{
     text-decoration: none;

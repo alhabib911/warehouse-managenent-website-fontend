@@ -1,0 +1,45 @@
+.login-text{
+    text-align: center;
+}
+.login-form {
+    width: 30%;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 500;
+}
+.login-form input{
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    padding-left: 15px;
+    border: 1px solid gainsboro;
+}
+.login-form .login-submit-btn{
+    margin: 10px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: #063E94;
+    color: #fff;
+    border-radius: 8px;
+}
+.forget-newLink{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.forget-newLink button{
+    border: none;
+    background-color: #fff;
+    color: #063E94;
+    font-size: 16px;
+}
+.forget-newLink a{
+    text-decoration: none;
+    color: #063E94;
+    padding-left: 10px;
+}
+.login-container h5{
+    text-align: center;
+}
