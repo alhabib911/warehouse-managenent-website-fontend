@@ -4,15 +4,22 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../farebase.init';
 import './Header.css'
+import Logo from '../../Logo/Logo.png'
 
 const Header = () => {
-    const[user] =useAuthState(auth)
-    const handleSignOut =() =>{
+    const [user] = useAuthState(auth)
+    const handleSignOut = () => {
         signOut(auth)
     }
     return (
+        <div>
+            <div className='header-top-text'>
+                <p>Zayn & Myza Warehouse Management System</p>
+            </div>
             <div className='navbar'>
-                <h2>Zayn & Myza</h2>
+                <div className='logo-container'>
+                    <Link to='/home'><img src={Logo} alt="" /></Link>
+                </div>
                 <nav>
                     <Link to='/'>Home</Link>
                     <Link to='/blogs'>Blogs</Link>
@@ -21,13 +28,14 @@ const Header = () => {
                 <nav>
                     {
                         user ?
-                        <Link to='/login' onClick={handleSignOut}>Log Out</Link>
-                        :
-                        <Link to='/login'>Login</Link>
+                            <Link to='/login' onClick={handleSignOut}>Log Out</Link>
+                            :
+                            <Link to='/login'>Login</Link>
                     }
                     <Link to='/signup'>Sign Up</Link>
                 </nav>
             </div>
+        </div>
     );
 };
 

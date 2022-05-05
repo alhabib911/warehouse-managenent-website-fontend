@@ -19,7 +19,7 @@ const SocialMediaLogin = () => {
     }
     return (
         <div>
-            <button className='google-login-btn' onClick={handleGoogleSignIn}> <FcGoogle></FcGoogle> <span>Goodle Login</span></button>      
+            <button className='google-login-btn' onClick={handleGoogleSignIn}> <FcGoogle></FcGoogle> <span>Google Login</span></button>      
         </div>
     );
 };
