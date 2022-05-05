@@ -22,9 +22,10 @@
     background-color: #063E94;
     color: #fff;
     border-radius: 8px;
+    cursor: pointer;
 }
 .forget-newLink{
-    width: 40%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -42,4 +43,10 @@
 }
 .login-container h5{
     text-align: center;
+}
+.login-form .error-text{
+    color: red;
+}
+.login-form .loading-message{
+    color: #063E94;
 }

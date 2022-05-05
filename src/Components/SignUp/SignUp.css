@@ -20,6 +20,7 @@
     background-color: #063E94;
     color: #fff;
     border-radius: 8px;
+    cursor: pointer;
 }
 .signUp-container h5{
     text-align: center;
@@ -28,4 +29,7 @@
     text-decoration: none;
     color: #063E94;
     padding-left: 10px;
+}
+.signup-form .error-text{
+    color: red;
 }
