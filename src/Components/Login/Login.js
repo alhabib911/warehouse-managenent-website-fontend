@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../farebase.init';
 import './Login.css'
+import SocialMediaLogin from './SocialMediaLogin';
 
 const Login = () => {
     const [email, setEmail] = useState('')
@@ -50,7 +51,7 @@ const Login = () => {
                     <label htmlFor="email">Email</label> <br />
                     <input onBlur={handleEmailBlue} type="email" name="email" id="" placeholder='Your Email' required /> <br />
                     <label htmlFor="password">Password</label> <br />
-                    <input onBlur={handlePasswordBlue} type="password" name="password" id="" placeholder='Your Password' required /> <br /> <br />
+                    <input onBlur={handlePasswordBlue} type="password" name="password" id="" placeholder='Your Password' required /> <br />
                     {
                         loading && <p className='loading'>Loading...</p>
                     }
@@ -64,8 +65,9 @@ const Login = () => {
                         <h5>New User?<Link to='/signup'>Register</Link></h5>
                         
                     </div>
-                    <div>
+                    <div> 
                         <h5>OR</h5>
+                        <SocialMediaLogin></SocialMediaLogin>
                         <ToastContainer />
                     </div>
                 </div>

@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../farebase.init'
 import './SignUp.css'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import SocialMediaLogin from '../Login/SocialMediaLogin';
 
 const SignUp = () => {
 
@@ -62,7 +63,7 @@ const SignUp = () => {
                     <label htmlFor="password">Password</label> <br />
                     <input onBlur={handlePasswordBlur} type="password" name="password" id="" placeholder='Your Password' required /> <br />
                     <label htmlFor="confirm-password">Confirm Password</label> <br />
-                    <input onBlur={handleConfirmPasswordBlur} type="password" name="confirm-password" id="" placeholder='Confirm Password' required /> <br /> <br />
+                    <input onBlur={handleConfirmPasswordBlur} type="password" name="confirm-password" id="" placeholder='Confirm Password' required /> <br />
                     <p className='error-text'>
                         {error}
                     </p>
@@ -72,7 +73,8 @@ const SignUp = () => {
                         <h5>Already Have an Account?<Link to='/login'>Login</Link></h5>
                     </div>
                     <div>
-                        <h5>OR</h5>
+                        <h4>OR</h4>
+                        <SocialMediaLogin></SocialMediaLogin>
                     </div>
                 </div>
             </form>

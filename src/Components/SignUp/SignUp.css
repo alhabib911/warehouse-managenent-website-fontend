@@ -24,6 +24,7 @@
 }
 .signUp-container h5{
     text-align: center;
+    margin: 0;
 }
 .signUp-container a{
     text-decoration: none;
@@ -32,4 +33,7 @@
 }
 .signup-form .error-text{
     color: red;
+}
+.signUp-container h4{
+    text-align: center;
 }
