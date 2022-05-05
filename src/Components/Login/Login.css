@@ -50,3 +50,6 @@
 .login-form .loading-message{
     color: #063E94;
 }
+.login-form .forget-link{
+    cursor: pointer;
+}

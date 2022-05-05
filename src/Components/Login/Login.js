@@ -1,6 +1,8 @@
+import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import auth from '../farebase.init';
 import './Login.css'
 
@@ -33,6 +35,13 @@ const Login = () => {
         signInWithEmailAndPassword(email, password)
     }
 
+    const handlePasswordReset = () => {
+        sendPasswordResetEmail(auth, email)
+            .then(() => {
+                toast('Email Sent');
+            })
+    }
+
     return (
         <div className='login-container'>
             <h2 className='login-text'>Login Please</h2>
@@ -51,14 +60,17 @@ const Login = () => {
                     <input className='login-submit-btn' type="submit" value="Login" />
 
                     <div className='forget-newLink'>
-                        <button>Forget Your Password?</button>
+                        <button className='forget-link' onClick={handlePasswordReset}>Forget Your Password?</button>
                         <h5>New User?<Link to='/signup'>Register</Link></h5>
+                        
                     </div>
                     <div>
                         <h5>OR</h5>
+                        <ToastContainer />
                     </div>
                 </div>
             </form>
+            
         </div>
     );
 };
