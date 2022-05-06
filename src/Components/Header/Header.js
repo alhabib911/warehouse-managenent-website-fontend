@@ -24,8 +24,13 @@ const Header = () => {
                     <Link to='/'>Home</Link>
                     <Link to='/blogs'>Blogs</Link>
                     <Link to='/about'>About</Link>
+                    <Link to='/products'>Products</Link>
                 </nav>
                 <nav>
+                    {
+                        user && 
+                        <Link to='/manage'>Manage Inventory</Link>
+                    }
                     {
                         user ?
                             <Link to='/login' onClick={handleSignOut}>Log Out</Link>

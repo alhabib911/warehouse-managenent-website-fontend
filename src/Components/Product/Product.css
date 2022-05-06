@@ -1,0 +1,32 @@
+.product-details img{
+    margin-left: 30%;
+    width: 150px;
+}
+.product-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+.product-details p{
+    text-align: center;
+}
+.product-details span{
+    font-weight: 600;
+}
+.product-details{
+    box-shadow: 0 5px 10px rgb(213, 213, 213);
+    padding: 10px;
+}
+.product-details button{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+    padding: 13px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}

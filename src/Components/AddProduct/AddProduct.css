@@ -1,0 +1,13 @@
+.add-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-field input{
+    width: 25%;
+    padding: 12px;
+    margin: 2px;
+}
+.add-field .submit-btn{
+    cursor: pointer;
+}

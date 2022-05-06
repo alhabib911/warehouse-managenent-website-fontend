@@ -1,0 +1,52 @@
+.inventory-product{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 14px 3px gainsboro;
+    margin-top: 25px;
+    padding: 18px;
+}
+.inventory-product img{
+    width: 10%;
+    border: 1px solid gainsboro;
+    margin-right: 15px;
+}
+.inventory-product p{
+    width: 45%;
+    padding: 10px;
+}
+.inventory-product h4{
+    width: 15%;
+}
+.inventory-count h5{
+    margin: 0;
+}
+.update-field{
+    width: 20%;
+    margin: auto;
+    padding: 35px 0 35px 0;
+}
+.update-field input{
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    background-color: #fff;
+}
+.update-field .submit-btn{
+    width: 112%;
+    cursor: pointer;
+}
+.update-field label{
+    font-size: 18px;
+    font-weight: 600;
+}
+.delivered-btn{
+    width: 10%;
+    padding: 15px;
+    margin-left: 25px;
+    border: 1px solid gainsboro;
+    background-color: #fff;
+    cursor: pointer;
+}

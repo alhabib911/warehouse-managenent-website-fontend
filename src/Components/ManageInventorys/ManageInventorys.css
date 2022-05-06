@@ -1,0 +1,25 @@
+
+.inventory-details{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 14px 3px gainsboro;
+    margin-top: 25px;
+    padding: 18px;
+}
+.inventory-details img{
+    width: 10%;
+    border: 1px solid gainsboro;
+    margin-right: 15px;
+}
+.inventory-details .details{
+    width: 45%;
+    padding: 10px;
+}   
+.inventory-details button{
+    padding: 8px 25px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+}
