@@ -17,9 +17,8 @@
     height: 40px;
     font-size: 18px;
     border: none;
-    background-color: #063E94;
+    background-color: #F57224;
     color: #fff;
-    border-radius: 8px;
     cursor: pointer;
 }
 .signUp-container h5{
@@ -28,7 +27,7 @@
 }
 .signUp-container a{
     text-decoration: none;
-    color: #063E94;
+    color: #F57224;
     padding-left: 10px;
 }
 .signup-form .error-text{

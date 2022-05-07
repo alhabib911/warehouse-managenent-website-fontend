@@ -2,9 +2,15 @@
     width: 85%;
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
+.navwithlogo{
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+
 .navbar a{
     text-decoration: none;
     color: #000;
@@ -12,12 +18,13 @@
     font-size: 16px;
     font-weight: 400;
 }
-.navbar .logo-container img{
+.logo img{
     width: 20%;
-    /* margin-top: 15px; */
+    margin-left: 25%;
 }
 
 .header-top-text{
+    /* display: flex; */
     text-align: center;
     background-color: #F49694;
     color: #1f1f1f;

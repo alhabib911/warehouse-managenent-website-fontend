@@ -19,7 +19,7 @@
     height: 40px;
     font-size: 18px;
     border: none;
-    background-color: #063E94;
+    background-color: #F57224;
     color: #fff;
     border-radius: 8px;
     cursor: pointer;
@@ -33,12 +33,12 @@
 .forget-newLink button{
     border: none;
     background-color: #fff;
-    color: #063E94;
+    color: #F57224;
     font-size: 16px;
 }
 .forget-newLink a{
     text-decoration: none;
-    color: #063E94;
+    color: #F57224;
     padding-left: 10px;
 }
 .login-container h5{
