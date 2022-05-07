@@ -75,3 +75,43 @@
     background-color: #66cbf3;
     color: black;
 }
+
+@media screen and (max-width: 687px) {
+    .inventory-product{
+        display: flex;
+        flex-direction: column;
+    }
+    .delivered-btn{
+        width: 30%;
+    }
+    .inventory-product img{
+        width: 20%;
+        border: 1px solid gainsboro;
+        margin-right: 15px;
+    }
+    .inventory-product p{
+        width: 100%;
+        padding: 10px;
+    }
+    .inventory-product h4{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .inventory-count h5{
+        margin: 10px;
+        font-size: 16px;
+    }
+    .edit-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #66cbf3;
+        text-decoration: none;
+        width: 30%;
+        padding: 15px;
+        margin-top: 25px;
+    }
+}
+

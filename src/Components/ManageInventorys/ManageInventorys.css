@@ -17,6 +17,9 @@
     width: 45%;
     padding: 10px;
 }   
+.inventory-details h5{
+    width: 20%;
+}
 .inventory-details button{
     margin-left: 25px;
     padding: 8px 25px;
@@ -29,4 +32,20 @@
 .inventory-details button:hover{
     background-color: #fff;
     color: #ff0000;
+}
+@media screen and (max-width: 687px) {
+    .inventory-details .details{
+        display: none;
+    } 
+    .inventory-details h5{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .inventory-details .details{
+        display: none;
+    } 
+    .inventory-details h5{
+        font-size: 15px;
+    }
 }

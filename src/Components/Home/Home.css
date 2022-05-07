@@ -1,15 +1,18 @@
-.home-container h2{
+.home-container h2 {
     text-align: center;
 }
-.special-text{
+
+.special-text {
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
     padding: 45px;
 }
-.button-container{
+
+.button-container {
     margin: 25px;
 }
-.al-product-button{
+
+.al-product-button {
     width: 20%;
     margin: auto;
     text-decoration: none;
@@ -22,8 +25,41 @@
     padding: 10px 25px;
     border-radius: 2px;
 }
-.al-product-button:hover{
+
+.al-product-button:hover {
     color: #F57224;
     background-color: #fff;
     border: 1px solid #F57224;
+}
+
+@media screen and (max-width: 687px)  {
+    .al-product-button {
+        width: 50%;
+        margin: auto;
+        text-decoration: none;
+        background-color: #F57224;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        padding: 5px 25px;
+        border-radius: 2px;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .al-product-button {
+        width: 28%;
+        margin: auto;
+        text-decoration: none;
+        background-color: #F57224;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        padding: 2px 25px;
+        border-radius: 2px;
+    }
 }

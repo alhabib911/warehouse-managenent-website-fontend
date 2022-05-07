@@ -1,3 +1,4 @@
+
 .product-details img{
     margin-left: 30%;
     width: 150px;
@@ -33,4 +34,25 @@
 .product-details button:hover{
     background-color: #F57224;
     color: #fff;
+}
+
+@media screen and (max-width: 687px ) {
+    .product-container{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+    .product-container{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        
+    }
 }
