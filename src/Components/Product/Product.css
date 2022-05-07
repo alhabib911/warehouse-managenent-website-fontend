@@ -23,10 +23,14 @@
 .product-details button{
     width: 100%;
     background-color: #fff;
-    border: 1px solid gainsboro;
+    border: 1px solid #F57224;
+    color: #F57224;
     padding: 13px;
-    color: #000;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+}
+.product-details button:hover{
+    background-color: #F57224;
+    color: #fff;
 }

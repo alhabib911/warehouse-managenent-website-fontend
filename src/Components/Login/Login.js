@@ -2,7 +2,7 @@ import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { toast, ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';import 'react-toastify/dist/ReactToastify.css';
 import auth from '../farebase.init';
 import './Login.css'
 import SocialMediaLogin from './SocialMediaLogin';
@@ -34,6 +34,7 @@ const Login = () => {
     const handleUserSignIn =event =>{
         event.preventDefault()
         signInWithEmailAndPassword(email, password)
+        
     }
 
     const handlePasswordReset = () => {

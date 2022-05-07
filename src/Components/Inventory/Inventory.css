@@ -1,10 +1,12 @@
+.inventory-container{
+    margin: 10px 0 10px 0;
+}
 .inventory-product{
     width: 95%;
     margin: auto;
     display: flex;
     align-items: center;
     box-shadow: 0px 0px 14px 3px gainsboro;
-    margin-top: 25px;
     padding: 18px;
 }
 .inventory-product img{
@@ -18,9 +20,11 @@
 }
 .inventory-product h4{
     width: 15%;
+    font-size: 16px;
 }
 .inventory-count h5{
     margin: 0;
+    font-size: 16px;
 }
 .update-field{
     width: 20%;
@@ -46,7 +50,28 @@
     width: 10%;
     padding: 15px;
     margin-left: 25px;
-    border: 1px solid gainsboro;
-    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    background-color: #009800;
+    color: #fff;
     cursor: pointer;
+}
+.delivered-btn:hover{
+    border: 1px solid #009800;
+    background-color: #ffffff;
+    color: #009800;
+}
+.edit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #66cbf3;
+    text-decoration: none;
+    width: 10%;
+    padding: 15px;
+    margin-left: 25px;
+}
+.edit-btn:hover{
+    background-color: #66cbf3;
+    color: black;
 }

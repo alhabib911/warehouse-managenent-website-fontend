@@ -23,7 +23,6 @@ const Header = () => {
                 <nav>
                     <Link to='/'>Home</Link>
                     <Link to='/blogs'>Blogs</Link>
-                    <Link to='/about'>About</Link>
                     <Link to='/products'>Products</Link>
                 </nav>
                 <nav>
@@ -32,12 +31,25 @@ const Header = () => {
                         <Link to='/manage'>Manage Inventory</Link>
                     }
                     {
+                        user &&
+                        <Link to='/addproduct'>Add Item</Link>
+                    }
+                    {
                         user ?
                             <Link to='/login' onClick={handleSignOut}>Log Out</Link>
                             :
                             <Link to='/login'>Login</Link>
+                            
                     }
-                    <Link to='/signup'>Sign Up</Link>
+                    {
+                        user ?
+                            <Link to='/login' onClick={handleSignOut}></Link>
+                            :
+                            <Link to='/signup'>Sign Up</Link>
+                            
+                    }
+
+                    
                 </nav>
             </div>
         </div>

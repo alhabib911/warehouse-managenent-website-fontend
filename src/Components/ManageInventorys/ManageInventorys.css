@@ -18,8 +18,15 @@
     padding: 10px;
 }   
 .inventory-details button{
+    margin-left: 25px;
     padding: 8px 25px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #ff0000;
     border: 1px solid gainsboro;
+    border-radius: 3px;
+    color: #fff;
+}
+.inventory-details button:hover{
+    background-color: #fff;
+    color: #ff0000;
 }

@@ -13,6 +13,7 @@ const Product = (props) => {
 
     return (
             <div className="product-details">
+                {/* <p>{_id}</p> */}
                 <img src={photo} alt="" />
                 <p><span>Product Name:</span> {name}</p>
                 <p><span>Description:</span> {details}</p>

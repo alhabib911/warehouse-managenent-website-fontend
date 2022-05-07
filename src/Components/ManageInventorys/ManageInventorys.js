@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 import './ManageInventorys.css'
 
 const ManageInventorys = (props) => {
@@ -17,6 +18,9 @@ const ManageInventorys = (props) => {
                     console.log('deleted');
                 }
             })
+            .then(() => {
+                toast('This Product is Deleted Reload this page');
+            })
         }
     }
 
@@ -33,6 +37,7 @@ const ManageInventorys = (props) => {
                     <button onClick={()=> handleProductItemDelete(_id)}>Delete</button>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

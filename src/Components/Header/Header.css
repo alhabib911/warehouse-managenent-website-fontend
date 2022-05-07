@@ -19,9 +19,11 @@
 
 .header-top-text{
     text-align: center;
-    background-color: #F9EF9A;
+    background-color: #F49694;
     color: #1f1f1f;
-    padding: 1px;
+    padding: 18px 0 8px 0;
     margin-bottom: 10px;
     font-size: 16px;
+    font-weight: 600;
+    color: #fff;
 }

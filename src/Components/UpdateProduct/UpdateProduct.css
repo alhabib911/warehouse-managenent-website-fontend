@@ -1,0 +1,32 @@
+.update-container{
+    margin: 50px 0 200px 0;
+    box-shadow: 0 3px 15px #f0f0f0;
+    padding: 25px;
+}
+.update-area{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.update-form label{
+    font-size: 18px;
+}
+.update-area .qty-field{
+    padding: 12px;
+    font-size: 17px;
+    border: 1PX solid #f0f0f0;
+}
+.update-area .update-btn {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #F57224;
+    color: #F57224;
+    padding: 12px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.update-area .update-btn:hover{
+    background-color: #F57224;
+    color: #fff;
+}

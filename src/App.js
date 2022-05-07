@@ -2,7 +2,6 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Blogs from './Components/Blogs/Blogs';
-import About from './Components/About/About';
 import Header from './Components/Header/Header';
 import Login from './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
@@ -12,6 +11,10 @@ import Products from './Components/Products/Products';
 import Inventory from './Components/Inventory/Inventory';
 import RequereAuth from './Components/RequereAuth/RequereAuth';
 import ManageInventory from './Components/ManageInventory/ManageInventory';
+import UpdateProduct from './Components/UpdateProduct/UpdateProduct';
+import FirstSection from './Components/FirstSection/FirstSection';
+import SecoundSection from './Components/SecoundSection/SecoundSection';
+import NotFound from './Components/NotFound/NotFound';
 
 
 
@@ -31,10 +34,13 @@ function App() {
         }></Route>
         <Route path='/addproduct' element={<AddProduct></AddProduct>}></Route>
         <Route path='/products' element={<Products></Products>}></Route>
-        <Route path='/About' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/manage' element={<ManageInventory></ManageInventory>}></Route>
+        <Route path='/update/:id' element={<UpdateProduct></UpdateProduct>}></Route>
+        <Route path='/first-section' element={<FirstSection></FirstSection>}></Route>
+        <Route path='/secound' element={<SecoundSection></SecoundSection>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

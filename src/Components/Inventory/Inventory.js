@@ -1,17 +1,21 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import useProduct from '../hook/useProduct';
+import { FiEdit } from 'react-icons/fi'
 import './Inventory.css'
 
 const Inventory = () => {
+
     const { inventoryId } = useParams()
-    // console.log(inventoryId);
+    console.log(inventoryId);
     const [product, SetProduct] = useProduct()
     const singleProduct = product.find((product) => product._id == inventoryId)
-    console.log(singleProduct);
+
+    
     return (
-        <div>
+        <div className='inventory-container'>
             <div className='inventory-product'>
+                {/* <p>{singleProduct?._id}</p> */}
                 <img src={singleProduct?.photo} alt="" />
                 <h4>{singleProduct?.name}</h4>
                 <p>{singleProduct?.details}</p>
@@ -21,13 +25,7 @@ const Inventory = () => {
                     <h5>Supplier Name: {singleProduct?.supplier}</h5>
                 </div>
                 <button className='delivered-btn' type="submit">Delivered</button>
-            </div>
-            <div className='update-field'>
-                <form> 
-                    <label htmlFor="quantity">Add Stock</label> <br />
-                    <input type="number" name="quantity" id="" placeholder='Add Quantity' /> <br /> <br />
-                    <input className='submit-btn' type="submit" value="Update" />
-                </form>
+                <Link className='edit-btn' to={`/update/${inventoryId}`}> <FiEdit></FiEdit> EDIT</Link>
             </div>
         </div>
     );
