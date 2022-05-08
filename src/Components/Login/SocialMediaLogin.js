@@ -4,12 +4,13 @@ import React from 'react';
 import auth from '../farebase.init';
 import './SocialMediaLogin.css'
 import { toast, ToastContainer } from 'react-toastify';
-// import { toast, ToastContainer } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
-// const auth =getAuth()
 const SocialMediaLogin = () => {
     const googleProvider = new GoogleAuthProvider()
-    
+    const navigate = useNavigate()
+    const [user] = useAuthState(auth)
 
     const handleGoogleSignIn =() => {
         signInWithPopup(auth, googleProvider)
@@ -23,6 +24,10 @@ const SocialMediaLogin = () => {
             toast('Thank You for signin');
         })
     }
+    if(user) {
+        navigate('/home')
+    }
+
     return (
         <div>
             <button className='google-login-btn' onClick={handleGoogleSignIn}> <FcGoogle></FcGoogle> <span>Google Login</span></button>  

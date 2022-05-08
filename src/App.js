@@ -15,6 +15,7 @@ import UpdateProduct from './Components/UpdateProduct/UpdateProduct';
 import FirstSection from './Components/FirstSection/FirstSection';
 import SecoundSection from './Components/SecoundSection/SecoundSection';
 import NotFound from './Components/NotFound/NotFound';
+import MyItem from './Components/MyItem/MyItem';
 
 
 
@@ -40,6 +41,7 @@ function App() {
         <Route path='/update/:id' element={<UpdateProduct></UpdateProduct>}></Route>
         <Route path='/first-section' element={<FirstSection></FirstSection>}></Route>
         <Route path='/secound' element={<SecoundSection></SecoundSection>}></Route>
+        <Route path='/myitem' element={<MyItem></MyItem>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

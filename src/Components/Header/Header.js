@@ -37,6 +37,10 @@ const Header = () => {
                                     <Link to='/addproduct'>Add Item</Link>
                                 }
                                 {
+                                    user &&
+                                    <Link to='/myitem'>My Items</Link>
+                                }
+                                {
                                     user ?
                                         <Link to='/login' onClick={handleSignOut}>Log Out</Link>
                                         :
