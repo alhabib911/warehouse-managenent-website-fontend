@@ -8,7 +8,7 @@ const UpdateProduct = () => {
     const [product, setProduct] = useState({})
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${id}`
+        const url = `https://thawing-wildwood-54865.herokuapp.com/product/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -19,14 +19,16 @@ const UpdateProduct = () => {
     const handelUpdateProduct = event => {
         event.preventDefault()
         const quantity = event.target.quantity.value
-        // console.log(quantity);
+        console.log(quantity);
         const updateProduct = { quantity }
         // console.log(updateProduct)
-
         const currentProduct = product.quantity
+        console.log(currentProduct);
+        const updateAdd = currentProduct + quantity
+        console.log(updateAdd);
 
 
-        const url = `http://localhost:5000/product/${id}`
+        const url = `https://thawing-wildwood-54865.herokuapp.com/product/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -41,13 +43,6 @@ const UpdateProduct = () => {
                 event.target.reset()
             })
     }
-
-    const updatedProduct = product.updateProduct
-    console.log(updatedProduct);
-    const currentProduct = product.quantity
-    console.log(currentProduct);
-
-
     return (
         <div className="update-container">
             <div className='update-area'>

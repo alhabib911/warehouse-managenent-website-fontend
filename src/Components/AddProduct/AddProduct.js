@@ -21,7 +21,7 @@ const AddProduct = () => {
 
         const product = { displayName, email, photo, name, details, price, quantity, supplier }
 
-        fetch('http://localhost:5000/product', {
+        fetch('https://thawing-wildwood-54865.herokuapp.com/product', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

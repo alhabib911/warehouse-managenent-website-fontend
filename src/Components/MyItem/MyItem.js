@@ -11,7 +11,7 @@ const MyItem = () => {
     useEffect (()=> {
         const getItem = async() => {
              const email =user.email
-            const url = `http://localhost:5000/product?email=${email}`
+            const url = `https://thawing-wildwood-54865.herokuapp.com/product?email=${email}`
             const {data} =await axios.get(url, {
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`
