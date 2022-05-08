@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';import 'react-toastify/di
 import auth from '../farebase.init';
 import './Login.css'
 import SocialMediaLogin from './SocialMediaLogin';
+import axios from 'axios';
 
 const Login = () => {
     const [email, setEmail] = useState('')
@@ -28,13 +29,15 @@ const Login = () => {
     }
 
     if(user) {
-        navigate('/home')
+        // navigate('/home')
     }
 
-    const handleUserSignIn =event =>{
+    const handleUserSignIn = async event =>{
         event.preventDefault()
-        signInWithEmailAndPassword(email, password)
-        
+        await signInWithEmailAndPassword(email, password)
+        const {data} = await axios.post('http://localhost:5000/login', {email});
+        localStorage.setItem('accessToken', data.accessToken);
+        navigate('/myitem')
     }
 
     const handlePasswordReset = () => {
