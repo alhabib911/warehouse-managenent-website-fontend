@@ -42,7 +42,7 @@ const AddProduct = () => {
             <div className='addproduct-container'>
                 <div className='menu'>
                     <h2><Link className='logo-name' to='/home'>Zayn & Myza</Link></h2> <br /> <br />
-                    <p>{user?.displayName}'s Account</p>
+                    <p>{user?.displayName} Account</p>
                     <hr />
                     <Link to='/home'>Home</Link>
                     <Link to='/manage'>All Products</Link>
